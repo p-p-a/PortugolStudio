@@ -1,0 +1,67 @@
+programa
+{
+	inteiro d = 1
+	inteiro alg = 0
+	cadeia nome, turma, disc
+	cadeia aluno1, aluno2, aluno3
+	cadeia turma1, turma2, turma3
+	cadeia disc1, disc2, disc3
+	caracter ficar = "S"
+    real n1[4]
+	real n2[4]
+	real n3[4]
+	funcao resultado (cadeia a,cadeia t,cadeia c, inteiro y, inteiro z,inteiro w)
+	{ 
+		escreva (a, " tirou ", n1[y]," | ", n2[z]," | " ,n3[w], "\n")
+		escreva ("Sua turma é ", t, "\n")
+		escreva ("Na matéria de ", c, "\n")
+		escreva ("----------------------------- \n")
+	}
+	funcao inicio ()
+	{
+		nome = "semnome"
+		escreva ("Top 3 Alunos!\n")
+		enquanto (ficar == 'S') {
+		escreva ("Quer adicionar um aluno? (S/N) ")
+		leia(ficar)
+			se (ficar == 'S') {
+			escreva ("Aluno ", d, "\n")
+			escreva ("Nome do aluno: ")
+			alg = alg + 1
+			leia (nome)
+			se (alg == 1) {aluno1 = nome}
+			se (alg == 2) {aluno2 = nome}
+			se (alg == 3) {aluno3 = nome}
+			escreva ("Turma: ")
+			leia (turma)
+			se (alg == 1) {turma1 = turma}
+			se (alg == 2) {turma2 = turma}
+			se (alg == 3) {turma3 = turma}
+			escreva ("Disciplina: ")
+			leia (disc)
+			se (alg == 1) {disc1 = disc}
+			se (alg == 2) {disc2 = disc}
+			se (alg == 3) {disc3 = disc}
+			escreva ("Nota 1: ")
+			leia (n1[d])
+			escreva ("Nota 2: ")
+			leia (n2[d])
+			escreva ("Nota 3: ")
+			leia (n3[d])
+			d =	 d + 1
+			limpa()
+	} 
+}
+	escreva ("-----------\n")
+	escreva ("Alunos top 3\n")
+	escreva ("Aluno 1\n")
+	resultado (aluno1, turma1, disc1, 1, 1, 1)
+	escreva ("Aluno 2\n")
+	resultado (aluno2, turma2, disc2, 2, 2, 2)
+	escreva ("aluno 3\n")
+	resultado (aluno3, turma3, disc3, 3, 3, 3)
+		//Era para ser inserido infinitos Alunos
+		//Devido ao vetor não guardar cadeia
+		//Fiz esse negócio no cell de madruga
+	}
+}
