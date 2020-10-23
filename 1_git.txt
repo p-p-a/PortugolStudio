@@ -6,8 +6,8 @@ programa
 	cadeia aluno1, aluno2, aluno3
 	cadeia turma1, turma2, turma3
 	cadeia disc1, disc2, disc3
-	caracter ficar = "S"
-    real n1[4]
+	caracter ficar = 'S'
+    	real n1[4]
 	real n2[4]
 	real n3[4]
 	funcao resultado (cadeia a,cadeia t,cadeia c, inteiro y, inteiro z,inteiro w)
@@ -60,8 +60,5 @@ programa
 	resultado (aluno2, turma2, disc2, 2, 2, 2)
 	escreva ("aluno 3\n")
 	resultado (aluno3, turma3, disc3, 3, 3, 3)
-		//Era para ser inserido infinitos Alunos
-		//Devido ao vetor não guardar cadeia
-		//Fiz esse negócio no cell de madruga
 	}
 }
